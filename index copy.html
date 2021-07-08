@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AppLock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/strap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/default.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/word.js"></script>
+
+<script>
+var make_button_active1 = function()
+{ 
+var siblings =($(this).siblings());
+siblings.each(function (index)
+{
+$(this).removeClass('fea-bor');
+})
+$(this).addClass('fea-bor');}
+
+$(document).ready( function()  {
+    $(".ft li").hover(make_button_active1);
+
+$("#f1text").hover(function(){$("#f1").show(); $("#f2, #f3, #f4").hide(); }); 
+$("#f2text").hover(function(){$("#f2").show(); $("#f1, #f3, #f4").hide(); });
+$("#f3text").hover(function(){$("#f3").show(); $("#f1, #f2, #f4").hide(); }); 
+$("#f4text").hover(function(){$("#f4").show(); $("#f1, #f3, #f2").hide(); });
+$(".menu-icon").click(function(){$("#l2").hide();$(".ol").show();$("#l1").addClass('rotate45'); $("#l3").addClass('rotate130'); $("nav").slideDown(); }); 
+$(".ol").click(function(){ $(".ol").hide(); $("#l2").show();$("#l1").removeClass('rotate45'); $("#l3").removeClass('rotate130'); $("nav").slideUp(); });
+ });
+
+$(document).ready(function() {  $('.mockup-left').css("left", '0px');$('.mockup-right').css("right", '0px');  });
+          </script>
+
+</head>
+
+
+<body>
+<header>
+<div class="wrap"> 
+<div class="logo"> <img src="assets/img/logo.png"></div>
+<div class="menu-icon"><div class="line1" id="l1"></div><div class="line1" id="l2"></div><div class="line1" id="l3"></div></div><div class="ol"></div>
+
+<div class="right-nav">
+<nav><ul>
+<a href="#features"><li>Features</li></a>
+<a href="#testimonials"><li>Testimonials</li></a>
+<a href="#more-apps"><li>More Apps</li></a>
+<a href="#contact"><li>Contact Us</li></a>
+</ul></nav>
+
+</div>	
+</div>
+</header>
+
+
+<section id="hero-sec">
+	<div class="col-100"><div class="hus"><div class="heading">Lock Your</div>
+	<h1><span
+     class="txt-rotate"
+     data-period="3000"
+     data-rotate='[ "Photos", "Images", "Apps", "Messages", "Gallery" ]'></span>
+</h1></div></div>
+<div class="wrapper-s">
+
+<p>Nosy friends or shady hackers, now no one gets through your apps.</p>
+
+<div class="col-100"><div class="google-cta"><a href="https://play.google.com/store/apps/details?id=app.locker.fingerprint.applock.lockapps"><img src="assets/img/white-google-cta.png"></a></div>
+</div>	
+<div class="col-100">
+<div class="mockup-sc-con">		
+<div class="mockup-left"><img src="assets/img/mock-left.png"></div>
+<div class="mockup-center"><img src="assets/img/mock-center.png"></div>
+<div class="mockup-right"><img src="assets/img/mock-right.png"></div>
+
+</div></div>
+
+
+
+</div></section>
+
+<section id="hero-mobile">
+<div class="col-100"><div class="hus"><div class="heading">Lock Your</div>
+  <h1><span
+     class="txt-rotate"
+     data-period="3000"
+     data-rotate='[ "Photos", "Images", "Apps", "Messages", "Gallery" ]'></span>
+</h1></div></div>
+<div class="wrapper-s">
+
+<p>Nosy friends or shady hackers, now no one gets through your apps.</p>
+<div class="col-100"><div class="google-cta"><a href="https://play.google.com/store/apps/details?id=app.locker.fingerprint.applock.lockapps"><img src="assets/img/white-google-cta.png"></a></div>
+</div>	
+
+<div class="col-100">
+<div class="mockup-sc-mon">	 <div class="col-100"><img src="assets/img/mockups.svg"></div></div>
+
+
+</div>	
+</div>
+</section>
+
+<section id="counter">
+<div class="wrapper">	
+
+
+<div class="counter-box">
+<div class="rota-box"><img src="assets/img/vector.png"></div>
+<div class="cunt-num">10M+</div>
+<div class="cunt-text">Total Installs</div>
+</div>
+
+<div class="counter-box">
+<div class="rota-box"><img src="assets/img/vector1.png"></div>
+<div class="cunt-num">500M+</div>
+<div class="cunt-text">Total Apps Secured</div>
+</div>
+
+<div class="counter-box">
+<div class="rota-box"><img src="assets/img/vector2.png"></div>
+<div class="cunt-num">350M+</div>
+<div class="cunt-text">Files Secured</div>
+</div>
+
+</section>
+
+
+
+<section id="features">
+<div class="wrapper">
+<div class="col-50 ">
+<div class="feat-img" id="f1"><img src="assets/img/feat1.gif"></div>
+<div class="feat-img1" id="f2"><img src="assets/img/feat2.png"></div>
+<div class="feat-img1" id="f3"><img src="assets/img/feat3.png"></div>
+<div class="feat-img1" id="f4"><img src="assets/img/feat4.png"></div>
+</div>
+
+
+<div class="col-50 ">
+<h2>Security at its best</h2>
+<ul class="ft">
+<li class="feat-box fea-bor" id="f1text">
+<div class="f-text"> One Tap Lock</div>
+<div class="f-des">Secure all your private apps so that only you can access them.</div>
+
+</li>
+
+<li class="feat-box" id="f2text">
+<div class="f-text">Patterns & Passcodes</div>
+<div class="f-des">High security pattern and passcode locks with custom design options.</div>
+</li>
+
+<li class="feat-box" id="f3text">
+<div class="f-text"> Face & Touch ID locks</div>
+<div class="f-des">Lock and unlock your apps with your face or fingertips - literally !</div>
+</li>
+
+<li class="feat-box" id="f4text">
+<div class="f-text"> Easy Recovery</div>
+<div class="f-des">It’s easy to forget passwords. So we made it easy to recover them too.</div>
+</li>	
+</ul>
+</div>	
+
+</section>
+
+
+<section id="features-mobile">
+<div class="wrapper">
+<h2>Security at its best</h2>
+<div class="ssl owl-carousel owl-theme">
+
+<div class="item"> 
+<div class="feat-box fea-bor" >
+<div class="f-text"> One Tap Lock</div>
+<div class="f-des">Secure all your private apps so that only you can access them.</div>
+</div>
+<div class="feat-img" ><img src="assets/img/feat1.png"></div>
+</div>
+
+
+<div class="item"> 
+<div class="feat-box fea-bor" >
+<div class="f-text">Patterns & Passcodes</div>
+<div class="f-des">High security pattern and passcode locks with custom design options.</div>
+</div>
+
+<div class="feat-img1" ><img src="assets/img/feat2.png"></div>
+</div>
+         
+
+<div class="item"> 
+<div class="feat-box fea-bor">
+<div class="f-text"> Face & Touch ID locks</div>
+<div class="f-des">Lock and unlock your apps with your face or fingertips - literally !</div>
+</div>
+<div class="feat-img1" ><img src="assets/img/feat3.png"></div>
+</div>
+
+
+<div class="item"> 
+<div class="feat-box fea-bor">
+<div class="f-text"> Easy Recovery</div>
+<div class="f-des">It’s easy to forget passwords. So we made it easy to recover them too.</div>
+</div>	
+<div class="feat-img1" ><img src="assets/img/feat4.png"></div>
+</div>   
+           
+</div></div>
+</section>
+
+
+
+
+
+<section class="much" id="antivirus">	
+<div class="wrapper">
+<div class="col-50">
+
+<h2>Much More than App Lock</h2>	
+
+<h3> AntiVirus Protection</h3>
+
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Absolute defense against all viruses, trojans & malware</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Get hack alerts & take action at the right time</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>On device security - so nothing leaves your device</span>
+</div></div>
+
+
+
+<div class="col-50">
+<div class="virus-img f-right">	<img src="assets/img/virus.png"></div>
+</div>
+</div>
+
+</section>
+
+
+
+
+<section id="vault" class="high">	
+<div class="wrapper">
+
+
+<div class="col-50 ff">
+<h3> High Security Vault</h3>
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Secure your private photos, files, videos inside the vault</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>State-of-the-art encryption technology for uncompromised safety</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Images, Text, Audio, Video, Apk & more - all file types supported</span>
+</div></div>
+
+
+
+<div class="col-50 ff">
+<div class="high-img ">	<img src="assets/img/locks.png"></div></div>
+
+
+</div></div>
+
+</section>
+
+
+<section class="much" id="browser">	
+<div class="wrapper">
+<div class="col-50 pad-right-50">
+
+
+<h3> Fast, Anonymous Browser</h3>
+
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Surf the internet without a worry </span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Multi-layer protection for your internet  banking,   cookies & more</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Manage your downloads - shred sensitive ones</span>
+</div></div>
+
+
+
+<div class="col-50">
+<div class="secure-img f-right">	<img src="assets/img/secure.png"></div>
+</div>
+</div>
+
+</section>
+
+
+
+<section id="al">	
+<div class="wrapper">
+
+<div class="col-50 sh">
+<div class="gr-img ">	<img src="assets/img/gr.png"></div></div>
+
+
+<div class="col-50">
+<h3> Analytics for all apps</h3>
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Get to know your phone usage patterns</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Know which apps you use - the most and least</span></div>
+
+<div class="tick-box">
+<div class="tick-img"><img src="assets/img/check-circle.png"></div>
+<span>Find out who tried unlocking your phone with intruder selfie</span>
+</div></div>
+
+</div>
+
+
+<div class="col-50 hh">
+<div class="gr-img ">	<img src="assets/img/gr.png"></div></div>
+
+</div>
+
+</section>
+
+
+<section id="testimonials" class="testi">
+<div class="wrap">
+<h2> Our users are loving it</h2>
+<div class="jus">
+<div class="ratting-text">4.3 </div>
+<div class="ratt-img"><img src="assets/img/rating-43.svg"></div><span>( 7,84,406 )</span></div>
+
+<div class="col-100 mar-top-40">
+
+<div class="testi-box">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse1.png"></div><div class="col-60"><div class="testi-name">Jenny Wilson</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text">Very useful app. You can even change the app icon for app lock on the home screen for better privacy.</div>
+</div>	</div>
+
+
+
+<div class="testi-box">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse2.png"></div><div class="col-60"><div class="testi-name">Wade Warren</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text">Super fast and easy way to secure your phone and applications. Very simple to activate and secure your device.</div>
+</div>	</div>
+
+
+
+<div class="testi-box">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse3.png"></div><div class="col-60"><div class="testi-name">Bessie Cooper</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text">Super helpful and smooth app with fantastic interface. It is super easy to use with zero cyber threats.</div>
+</div>	</div>
+
+
+<div class="testi-box sh">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse4.png"></div><div class="col-60"><div class="testi-name">Cody Fisher</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text">Fantastic app. Totally worth it experience. You can lock multiple apps at the same time including in-built calls,messages and settings on your device.</div>
+</div>	</div>
+
+<div class="testi-box sh">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse5.png"></div><div class="col-60"><div class="testi-name">Esther Howard</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text">Awesome app. Guards all your confidential information on your phone and even fake crashes to protect your device from unauthorized access.</div>
+</div>	</div>
+
+<div class="testi-box sh">
+<div class="col-100">
+<div class="testi-img"><img src="assets/img/Ellipse6.png"></div><div class="col-60"><div class="testi-name">Guy Hawkins</div></div>
+<div class="col-60"><div class="ratt-img1"><img src="assets/img/rating-43.svg"></div></div>
+
+<div class="testi-text ">Amazing app that ensures total security and privacy. You can even enable invisible pattern lock for total security.</div>
+</div>	</div>
+
+</div></div></div>
+</section>
+
+
+
+<section id="more-apps">
+<div class="wrapper-s">
+<h2>More Apps</h2>
+
+<div class="tos owl-carousel owl-theme">
+<a href="https://play.google.com/store/apps/details?id=com.cam.scanner.camscanner.documentscanner"><div class="item"> <div class="tools-box">
+<img src="assets/img/scannergo.jpeg">
+<span>Scanner GO</span>	
+</div> </div></a>
+
+
+<a href="https://play.google.com/store/apps/details?id=com.Pally.Random.Video.Chat.Livetalk.Messenger"><div class="item"> <div class="tools-box">
+<img src="assets/img/plive.png">
+<span>Pally Live</span>	
+</div> </div></a>
+
+<a href="https://play.google.com/store/apps/details?id=com.sharekaro.shareit"><div class="item"> <div class="tools-box">
+<img src="assets/img/share-karo.png">
+<span>Share Karo</span>	
+</div> </div></a>
+
+
+<a href="https://play.google.com/store/apps/details?id=u.see.browser.for.uc.browser"><div class="item"> 
+<div class="tools-box">
+<img src="assets/img/br.png">
+<span>Browser Go</span>	
+</div> </div></a>
+
+<a href="https://play.google.com/store/apps/details?id=qr.code.reader.barcode.scanner.qrcodeScanner"><div class="item"> <div class="tools-box">
+<img src="assets/img/qr.png">
+<span>QR Scanner</span>	
+</div> </div></a>
+
+
+<a href="https://play.google.com/store/apps/details?id=messenger.chat.social.messenger">
+<div class="item"> <div class="tools-box">
+<img src="assets/img/messengergo.png">
+<span>Messenger Go</span>	
+</div></div> </a>
+
+
+
+
+</div>
+</section>
+
+<footer id="contact">
+<div class="bl-box">
+<ul>
+<a href="#home"><li>Home</li></a>
+<a href="#features"><li>Features</li></a>
+<a href="#antivirus"><li>Antivirus</li></a>
+<a href="#vault"><li>Vault</li></a>
+<a href="#browser"><li>Secure Browser</li></a>
+<a href="#testimonials"><li>Testimonials</li></a>
+</ul>
+
+<div class="sm-text">Made with love In India.  An Appy High Product</div>
+
+<div class="sm-text">Link to our main website :<a href="https://appyhigh.com/"><span>https://appyhigh.com/</span></a>
+</div>
+</div>
+<div class="gr-box">
+<h5>Get Applock through Mobile Number</h5>
+<h6>You can get link directly by entering your mobile number.</h6>
+
+<div class="col-100">
+	<form action="">
+<input type="text" placeholder="Enter Your Mobile Number" class="text-box" required="">
+<input type="submit" value="Get Link" class="sub-btn">
+
+</form>
+</div>	
+</div>	
+
+
+
+</footer>
+
+<div class="footer-strip">&copy; AppyHigh Technology 2021 . All Rights Reserved</div>
+
+
+<div class="footer-fixed">
+<div class="wrap">
+<div class="flogo"><img src="assets/img/flogo.png"></div>
+
+<div class="fcta"><a href="https://play.google.com/store/apps/details?id=app.locker.fingerprint.applock.lockapps"><img src="assets/img/black-google-cta.png"></a></div>
+</div>
+
+
+	</div>
+
+
+
+
+
+
+
+<script>
+
+
+
+            $(document).ready(function() {
+              $('.ssl').owlCarousel({
+                items: 1,
+                margin: 10,
+                
+              });
+            })
+          </script>
+
+          <script>
+            $(document).ready(function() {
+              $('.tos').owlCarousel({
+                
+           
+                nav: true,
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 3,
+                    nav: true
+                  },
+                  500: {
+                    items: 4,
+                    nav: true,
+                    margin: 10
+                  },
+                  700: {
+                    items: 4,
+                    nav: true,
+                    margin: 10
+                  },
+                  1100: {
+                    items: 5,
+                    nav: true,
+                    margin: 20
+                  },
+                  1400: {
+                    items: 6,
+                    nav: true,
+                    margin: 20
+                  },   
+                  2000: {
+                    items: 12,
+                    nav: true,
+                    margin: 20
+                  }
+
+              
+            }
+                
+              })
+            })
+          </script>
+        
+</body>
+</html>
